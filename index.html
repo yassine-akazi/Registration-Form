@@ -1,34 +1,48 @@
+<!-- Start of HTML document -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
     <title>Email</title>
+    
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="css/syle.css">
 </head>
+
 <body>
+    <!-- Start of container div -->
     <div class="container">
+        
+        <!-- Start of registration form -->
         <form class="registration">
+          
+          <!-- Heading of the form -->
           <h1>Registration Form</h1>
     
+          <!-- Label and input field for username -->
           <label for="username">
             <span>Username</span>
-    
             <input type="text" id="username" minlength="3" required>
     
+            <!-- List of requirements for username input -->
             <ul class="input-requirements">
               <li>At least 3 characters long</li>
               <li>Must only contain letters and numbers (no special characters)</li>
             </ul>
           </label>
     
+          <!-- Label and input field for password -->
           <label for="password">
             <span>Password</span>
+            <input type="password" id="password" maxlength="100" minlength="8" required>
     
-            <input type="password" id="password" 
-                maxlength="100" minlength="8" required>
-    
+            <!-- List of requirements for password input -->
             <ul class="input-requirements">
               <li>At least 8 characters long (and less than 100 characters)</li>
               <li>Contains at least 1 number</li>
@@ -38,6 +52,7 @@
             </ul>
           </label>
     
+          <!-- Label and input field for repeated password -->
           <label for="password_repeat">
             <span>Repeat Password</span>
             <input type="password" id="password_repeat" maxlength="100" minlength="8" required>
@@ -45,9 +60,13 @@
     
           <br>
     
+          <!-- Submit button for the form -->
           <input type="submit"> 
     
-        </form>
-      </div>
+        </form> <!-- End of registration form -->
+      
+    </div> <!-- End of container div -->
+    
 </body>
-</html>
+
+</html> <!-- End of HTML document -->
